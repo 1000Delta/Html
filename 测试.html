@@ -1,39 +1,27 @@
 <!DOCTYPE HTML>
 <html>
-<meta charset="utf8">
 
 <head>
+    <meta charset="utf8" />
     <style>
-        #square {
-            border-color: blue;
-            border-style: solid;
-            border-radius: 50px;
-            background-image: url(E:\Users\许致中\Pictures\QQ截图20170630105017.png);
-            color: red;
-            margin: 33% 33% 33% 33%;
-        }
-
-        div > a:link {
-            border-top: 2px solid #bbbbbb;
-            border-left: 2px solid #bbbbbb;
-            border-right: 2px solid rgb(109, 109, 109);
-            border-bottom: 2px solid rgb(109, 109, 109);
-            border-radius:20%;
-            background-color: #8F8F8F;
-        }
-
-        div > a:visited {
-            border-top: 2px solid rgb(109, 109, 109);
-            border-left: 2px solid rgb(109, 109, 109);
-            border-right: 2px solid #BBBBBB;
-            border-bottom: 2px solid #bbbbbb;
-            border-radius:20%;
-            background-color: #8F8F8F;
+        div #face {
+            font-size: 500%;
+            position: absolute;
         }
     </style>
 </head>
-<div id="square">
-    <a href="http://www.baidu.com" title="百度搜索">百度搜索</a>
+<body>
+<div id="face">
+    &#x263a;
 </div>
+<script>
+    var style = document.getElementbyId("face").style;
+    var move = function (){
+        style.left = Math.floor(Math.random() * 500) + 'px';
+        style.top = Math.floor(Math.random() * 400) + 'px';
+    }
+    setInterval(move, 2000);
+</script>
+</body>
 
 </html>
