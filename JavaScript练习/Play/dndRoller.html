@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+    <meta charset="UTF8">
+
+    <head>
+        <style>
+            input {
+                font-size:200%;
+            }
+            table {
+                width: 100%;
+
+                text-align: center;
+            }
+            tr {
+                width: 15%;                
+            }
+            div {
+                padding: 0px;
+                display: inline-block;
+                height:200px;
+
+                font-size: 500%;
+            }
+            p {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <title>DND Roller</title>
+    <body>
+        <table border="1">
+            <caption>
+                DND Roller
+            </caption>
+            <thead>
+                <tr>
+                    <td><input id="d20" type="button" value="d20"></td>
+                    <td><input id="d12" type="button" value="d12"></td>
+                    <td><input id="d10" type="button" value="d10"></td>
+                    <td><input id="d8"  type="button" value="d8"></td>
+                    <td><input id="d6"  type="button" value="d6"></td>
+                    <td><input id="d4"  type="button" value="d4"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2"><div id="d20Die"></div></td>
+                    <td rowspan="2"><div id="d12Die"></div></td>
+                    <td rowspan="1"><div id="d10Die1"></div></td>
+                    <td rowspan="2"><div id="d8Die"></div></td>
+                    <td rowspan="2"><div id="d6Die"></div></td>
+                    <td rowspan="2"><div id="d4Die"></div></td>                    
+                </tr>
+                <tr>
+                    <td rowspan="1"><div id="d10Die2"></div></td>                        
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+        <p>
+            <div id="history"></div>
+        </p>
+        <script src="js\dndRoller.js"></script>
+    </body>
+</html>

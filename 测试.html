@@ -4,23 +4,15 @@
 <head>
     <meta charset="utf8" />
     <style>
-        #face {
-            font-size: 500%;
-            position: absolute;
+        #die {
+            font-size: 800%;
         }
     </style>
 </head>
 <body>
-<div id="face">
-    &#x263a;
-</div>
-<script>
-    var style = document.getElementById("face").style;
-    var move = function (){
-        style.left = Math.floor(Math.random() * 500) + 'px';
-        style.top = Math.floor(Math.random() * 400) + 'px';
-    }
-    setInterval(move, 5);
+<div><input id="roller" type="button" value="roll" /></div>
+<div id="die"></div>
+<script src="测试.js">
 </script>
 </body>
 
