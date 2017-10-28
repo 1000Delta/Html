@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf8" />
     <style>
-        div #face {
+        #face {
             font-size: 500%;
             position: absolute;
         }
@@ -15,12 +15,12 @@
     &#x263a;
 </div>
 <script>
-    var style = document.getElementbyId("face").style;
+    var style = document.getElementById("face").style;
     var move = function (){
         style.left = Math.floor(Math.random() * 500) + 'px';
         style.top = Math.floor(Math.random() * 400) + 'px';
     }
-    setInterval(move, 2000);
+    setInterval(move, 5);
 </script>
 </body>
 
