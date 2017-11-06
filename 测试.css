@@ -1,0 +1,102 @@
+@keyframes tri1 {
+    0% {
+        transform: translateX(0vh) translateY(0);
+    }
+    33.3% {
+        transform: translateX(26vh) translateY(45vh);
+    }
+    66.6% {
+        transform: translateX(-26vh) translateY(45vh);
+    }
+    100% {
+        transform: translateX(0vh) translateY(0vh);
+    }
+}
+
+@keyframes tri2 {
+    0% {
+        transform: translateX(0vh) translateY(0vh);
+    }
+    33.3% {
+        transform: translateX(26vh) translateY(-45vh);
+    }
+    66.6% {
+        transform: translateX(-26vh) translateY(-45vh);
+    }
+    100% {
+        transform: translateX(0vh) translateY(0vh);
+    }
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    33.3% {
+        transform: rotate(120deg);
+    }
+    66.6% {
+        transform: rotate(240deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    text-align: center;
+}
+
+.tri1 {
+    height: 5px;
+    width: 5px;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    right: 0px;
+    animation: tri1 0.5s normal infinite;
+    background-color: blue;
+}
+
+.tri2 {
+    height: 5px;
+    width: 5px;
+    margin: auto;
+    position: absolute;
+    bottom: 20%;
+    left: 0px;
+    right: 0px;
+    background-color: blue;
+    animation: tri2 0.5s normal infinite;
+}
+
+.circle1 {
+    height: 59%;
+    width: 5px;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(red, green, blue, 0);
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    animation: circle 0.5s normal infinite;
+}
+
+.circle {
+    height: 5px;
+    width: 59%;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(red, green, blue, 0);
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    animation: circle 0.5s normal infinite;
+}
