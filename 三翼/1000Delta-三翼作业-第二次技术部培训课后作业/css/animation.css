@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img1 {
+    height: 100px;
+     width: 100px;
+
+    animation: img1 1s normal 
+}

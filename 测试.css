@@ -1,45 +1,62 @@
 @keyframes tri1 {
     0% {
-        transform: translateX(0vh) translateY(0);
-    }
-    33.3% {
-        transform: translateX(26vh) translateY(45vh);
-    }
-    66.6% {
-        transform: translateX(-26vh) translateY(45vh);
+        width: 5px;
     }
     100% {
-        transform: translateX(0vh) translateY(0vh);
+         top: 41%;
+        left: 40.5%;
+        width:51.4vmin;
     }
 }
 
 @keyframes tri2 {
     0% {
-        transform: translateX(0vh) translateY(0vh);
-    }
-    33.3% {
-        transform: translateX(26vh) translateY(-45vh);
-    }
-    66.6% {
-        transform: translateX(-26vh) translateY(-45vh);
+        width:5px;
     }
     100% {
-        transform: translateX(0vh) translateY(0vh);
+        bottom: 56%;
+        left: 15.5%;
+        width:51.4vmin;
     }
 }
 
-@keyframes circle {
+@keyframes tri3 {
     0% {
-        transform: rotate(0deg);
-    }
-    33.3% {
-        transform: rotate(120deg);
-    }
-    66.6% {
-        transform: rotate(240deg);
+        width:5px;
     }
     100% {
-        transform: rotate(360deg);
+        width:51.4vmin;
+    }
+}
+
+@keyframes tri4 {
+    0% {
+        width:5px;
+    }
+    100% {
+        bottom: 41%;
+        right: 40.5%;
+        width:51.4vmin;
+    }
+}
+
+@keyframes tri5 {
+    0% {
+        width:5px;
+    }
+    100% {
+        width:51.4vmin;
+    }
+}
+
+@keyframes tri6 {
+    0% {
+        width:5px;
+    }
+    100% {
+        top: 56%;
+        right: 15.5%;
+        width:51.4vmin;
     }
 }
 
@@ -47,56 +64,100 @@ body {
     text-align: center;
 }
 
-.tri1 {
+.tri1-1 {
     height: 5px;
     width: 5px;
+    border-radius: 50%;
+
     margin: auto;
+
     position: absolute;
     top: 20%;
-    left: 0px;
-    right: 0px;
-    animation: tri1 0.5s normal infinite;
-    background-color: blue;
+    left: 50%;
+    animation: tri1 0.5s normal 1;
+    animation-fill-mode: forwards;
+    background-color: #0000ff;
+    transform: rotate(60deg);
 }
 
-.tri2 {
+.tri1-2 {
     height: 5px;
     width: 5px;
+    border-radius: 50%;
+    
     margin: auto;
+
+    position: absolute;
+    bottom: 35%;
+    left: 24.3%;
+    animation: tri2 0.5s normal 1;
+    animation-fill-mode: forwards;
+    background-color: #0000ff;
+    transform: rotate(-60deg);
+}
+
+.tri1-3 {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    
+    margin: auto;
+
+    position: absolute;
+    bottom: 35%;
+    right: 24.3%;
+    animation: tri3 0.5s normal 1;
+    animation-fill-mode: forwards;
+    background-color: #0000ff;
+    transform: rotate(180deg);    
+}
+
+.tri2-1 {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    
+    margin: auto;
+
     position: absolute;
     bottom: 20%;
-    left: 0px;
-    right: 0px;
-    background-color: blue;
-    animation: tri2 0.5s normal infinite;
+
+    right: 50%;
+    animation: tri4 0.5s normal 1;
+    animation-fill-mode: forwards;
+    background-color: #0000ff;
+    transform: rotate(-120deg);
 }
 
-.circle1 {
-    height: 59%;
-    width: 5px;
-    margin: auto;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: rgba(red, green, blue, 0);
-    border-top: 5px solid red;
-    border-bottom: 5px solid red;
-    animation: circle 0.5s normal infinite;
-}
-
-.circle {
+.tri2-2 {
     height: 5px;
-    width: 59%;
+    width: 5px;
+    border-radius: 50%;
+    
     margin: auto;
+
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: rgba(red, green, blue, 0);
-    border-left: 5px solid red;
-    border-right: 5px solid red;
-    animation: circle 0.5s normal infinite;
+    top: 35%;
+    left: 24.3%;
+    animation: tri5 0.5s normal 1;
+    animation-fill-mode: forwards;
+    background-color: #0000ff;
+    transform: rotate(0deg);
 }
+
+.tri2-3 {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    
+    margin: auto;
+
+    position: absolute;
+    top: 35%;
+    right: 24.3%;
+    animation: tri6 0.5s normal 1;
+    animation-fill-mode: forwards;
+    background-color: #0000ff;
+    transform: rotate(120deg);
+}
+
